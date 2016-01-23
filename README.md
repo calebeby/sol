@@ -1,8 +1,14 @@
 # sol
-A cleaner version of materialize
+A cleaner, more semantic version of materialize.
+
+## Why I am making this
+I like Materialize, but I frequently found myself using classes in HTML to style things.
+
+## Progress
+These are the components that I have compressed by replacing most . with % placeholder.
 - [ ] date-picker
-- [ ] buttons
-- [ ] cards
+- [x] buttons
+- [x] cards
 - [ ] carousel
 - [ ] chips
 - [ ] collapsible
@@ -29,3 +35,5 @@ A cleaner version of materialize
 - [ ] typography
 - [ ] variables
 - [ ] waves
+## How to Use:
+Put your styles in the `_my-styles.scss` file. For example:

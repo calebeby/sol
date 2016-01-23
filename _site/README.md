@@ -6,7 +6,7 @@ A cleaner version of materialize
 - [ ] carousel
 - [ ] chips
 - [ ] collapsible
-- [ ] color
+- [x] color
 - [ ] dropdown
 - [ ] form
 - [ ] global
