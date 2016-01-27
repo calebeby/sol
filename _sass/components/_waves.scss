@@ -15,18 +15,16 @@ h1 {
 /*nav styles*/
 ul {
 	background: white; border-top: 6px solid hsl(180, 40%, 60%);
-	width: 900px; margin: 0 auto;
+	width: 200px; margin: 0 auto;
 }
 ul li {
 	list-style-type: none;
 	/*relative positioning for list items along with overflow hidden to contain the overflowing ripple*/
 	position: relative;
-	height:500px;
 	overflow: hidden;
 }
 ul li a {
-	font: normal 14px/28px Montserrat;
-  color: hsl(180, 40%, 40%);
+	font: normal 14px/28px Montserrat; color: hsl(180, 40%, 40%);
 	display: block; padding: 10px 15px;
 	text-decoration: none;
 	cursor: pointer; /*since the links are dummy without href values*/
