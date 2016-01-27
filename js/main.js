@@ -1,6 +1,8 @@
-//jQuery time
+
+
+//Buttons
 var parent, ink, d, x, y;
-$("ul li a").mousedown(function(e){
+$("ul li a, .button").mousedown(function(e){
 	parent = $(this).parent();
 	//create .ink element if it doesn't exist
 	if(parent.find(".ink").length === 0)
