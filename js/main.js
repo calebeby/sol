@@ -31,10 +31,10 @@ $("ul li a").mousedown(function(e){
 
 $(".button").mousedown(function(e){
 	//create .ink element if it doesn't exist
-	if(this.find(".ink").length === 0)
+	if($(this).find(".ink").length === 0)
 		parent.prepend("<span class='ink'></span>");
 
-	ink = this.find(".ink");
+	ink = $(this).find(".ink");
 	//incase of quick double clicks stop the previous animation
 	ink.removeClass("animate");
 
