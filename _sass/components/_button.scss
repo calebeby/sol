@@ -1,8 +1,10 @@
 .button {
+  font-family: roboto, arial, sans-serif;
   height: 36px;
-  margin-left: 16px;
-  margin-right: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
   text-transform: uppercase;
   border-radius: 2px;
   background-color: blue;
+  overflow: hidden;
 }
