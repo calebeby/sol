@@ -8,3 +8,14 @@
   background-color: white;
   overflow: hidden;
 }
+.button a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer; /*since the links are dummy without href values*/
+  /*prevent text selection*/
+  user-select: none;
+  /*static positioned elements appear behind absolutely positioned siblings(.ink in this case) hence we will make the links relatively positioned to bring them above .ink*/
+  position: relative;
+  color: green;
+
+}
