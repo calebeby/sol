@@ -35,5 +35,6 @@ These are the components that I have compressed by replacing most . with % place
 - [ ] typography
 - [ ] variables
 - [ ] waves
+
 ## How to Use:
 Put your styles in the `_my-styles.scss` file. For example:
