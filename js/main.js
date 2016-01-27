@@ -3,7 +3,7 @@
 //Buttons
 var parent, ink, d, x, y;
 $("ul li a, .button").mousedown(function(e){
-	parent = $(this).parent();
+	parent = $(this);
 	//create .ink element if it doesn't exist
 	if(parent.find(".ink").length === 0)
 		parent.prepend("<span class='ink'></span>");
