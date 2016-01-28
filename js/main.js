@@ -1,28 +1,36 @@
-//Buttons
-var parent, ink, d, x, y;
-$("ul li a, .button").mousedown(function(e){
-	parent = $(this).parent();
-	//create .ink element if it doesn't exist
-	if(parent.find(".ink").length === 0)
-		parent.append("<span class='ink'></span>");
+(function (window, $) {
 
-	ink = parent.find(".ink");
-	//for quick double clicks to stop the previous animation
-	ink.removeClass("animate");
+  $(function() {
 
-	//set size of .ink
-	if(!ink.height() && !ink.width())
-	{
-		//use parent's width or height whichever is larger for the diameter to make a circle which can cover the entire element.
-		d = Math.max(parent.outerWidth(), parent.outerHeight());
-		ink.css({height: d, width: d});
-	}
 
-	//get click coordinates
-	//logic = click coordinates relative to page - parent's position relative to page - half of self height/width to make it controllable from the center;
-	x = e.pageX - parent.offset().left - ink.width()/2;
-	y = e.pageY - parent.offset().top - ink.height()/2;
+    $('.ripple').on('click', function (event) {
+      event.preventDefault();
 
-	//set the position and add class .animate
-	ink.css({top: y+'px', left: x+'px'}).addClass("animate");
-})
+      var $div = $('<div/>'),
+          btnOffset = $(this).offset(),
+      		xPos = event.pageX - btnOffset.left,
+      		yPos = event.pageY - btnOffset.top;
+
+
+
+      $div.addClass('ripple-effect');
+      var $ripple = $(".ripple-effect");
+
+      $ripple.css("height", $(this).height());
+      $ripple.css("width", $(this).height());
+      $div
+        .css({
+          top: yPos - ($ripple.height()/2),
+          left: xPos - ($ripple.width()/2),
+          background: $(this).data("ripple-color")
+        })
+        .appendTo($(this));
+
+      window.setTimeout(function(){
+        $div.remove();
+      }, 2000);
+    });
+
+  });
+
+})(window, jQuery);
