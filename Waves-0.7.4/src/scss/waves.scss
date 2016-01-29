@@ -1,18 +1,18 @@
 
 /*!
  * Waves v0.7.4
- * http://fian.my.id/Waves
- *
- * Copyright 2014 Alfiana E. Sibuea and other contributors
- * Released under the MIT license
- * https://github.com/fians/Waves/blob/master/LICENSE
+ * http://fian.my.id/Waves 
+ * 
+ * Copyright 2014 Alfiana E. Sibuea and other contributors 
+ * Released under the MIT license 
+ * https://github.com/fians/Waves/blob/master/LICENSE 
  */
 
 @mixin waves-transition($transition){
     -webkit-transition: $transition;
-    -moz-transition: $transition;
+    -moz-transition: $transition; 
     -o-transition: $transition;
-    transition: $transition;
+    transition: $transition;  
 }
 
 @mixin waves-transform($string){
@@ -38,7 +38,7 @@
     -ms-user-select: none;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
-
+    
     .waves-ripple {
         position: absolute;
         border-radius: 50%;
@@ -48,11 +48,11 @@
         margin-left:-50px;
         opacity: 0;
         background: rgba(0,0,0,0.2);
-        //$gradient: rgba(0,0,0,0.2) 0,rgba(0,0,0,.3) 40%,rgba(0,0,0,.4) 50%,rgba(0,0,0,.5) 60%,rgba(255,255,255,0) 70%;
-        //background: -webkit-radial-gradient($gradient);
-        //background: -o-radial-gradient($gradient);
-        //background: -moz-radial-gradient($gradient);
-        //background: radial-gradient($gradient);
+        $gradient: rgba(0,0,0,0.2) 0,rgba(0,0,0,.3) 40%,rgba(0,0,0,.4) 50%,rgba(0,0,0,.5) 60%,rgba(255,255,255,0) 70%;
+        background: -webkit-radial-gradient($gradient);
+        background: -o-radial-gradient($gradient);
+        background: -moz-radial-gradient($gradient);
+        background: radial-gradient($gradient);
         @include waves-transition(all 0.5s ease-out);
         -webkit-transition-property: -webkit-transform, opacity;
         -moz-transition-property: -moz-transform, opacity;
@@ -64,17 +64,17 @@
 
     &.waves-light .waves-ripple {
         background: rgba(255,255,255,0.4);
-        //$gradient: rgba(255,255,255,0.2) 0,rgba(255,255,255,.3) 40%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.5) 60%,rgba(255,255,255,0) 70%;
-        //background: -webkit-radial-gradient($gradient);
-        //background: -o-radial-gradient($gradient);
-        //background: -moz-radial-gradient($gradient);
-        //background: radial-gradient($gradient);
+        $gradient: rgba(255,255,255,0.2) 0,rgba(255,255,255,.3) 40%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.5) 60%,rgba(255,255,255,0) 70%;
+        background: -webkit-radial-gradient($gradient);
+        background: -o-radial-gradient($gradient);
+        background: -moz-radial-gradient($gradient);
+        background: radial-gradient($gradient);
     }
-
+    
     &.waves-classic .waves-ripple {
         background: rgba(0,0,0,0.2);
     }
-
+    
     &.waves-classic.waves-light .waves-ripple {
         background: rgba(255,255,255,0.4);
     }
@@ -84,10 +84,10 @@
     @include waves-transition(none #{"!important"});
 }
 
-.waves-button,
+.waves-button, 
 .waves-circle {
     @include waves-transform(translateZ(0));
-    //-webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+    -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
 }
 
 .waves-button,
