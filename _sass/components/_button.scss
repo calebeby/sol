@@ -1,12 +1,20 @@
-a.button {
-  font-family: 'Roboto Condensed', sans-serif;
-  border: none;
-  outline: none;
-  cursor: pointer;
-//  background: #89669b;
-  color: white;
-  padding: 18px 60px;
-  border-radius: 2px;
-  font-size: 22px;
-  text-transform: uppercase;
+a.button,
+a.button:hover,
+a.button:visited,
+a.button-input {
+    font-family: 'Roboto Condensed', sans-serif;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: inherit;
+    background-color: aqua;
+    font-size: 1em;
+    line-height:1em;
+    text-align: center;
+    text-decoration: none;
+    z-index: 1;
+    padding: 0.85em 1.1em;
+    border-radius: 0.2em;
 }
