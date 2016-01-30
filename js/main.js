@@ -1,2 +1,2 @@
-Waves.attach('.button', ['waves-button', 'waves-float']);
+Waves.attach('.button', null);
 Waves.init();
