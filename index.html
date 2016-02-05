@@ -6,3 +6,19 @@ layout: default
 <input type="submit" name="name" value="ho">
 <input type="button" name="name" value="ho">
 <input type="reset" name="name" value="ho">
+{% capture markdown %}
+``` html
+<input type="text">
+<label>First Name</label>
+```
+{% endcapture %}
+{{ markdown | markdownify }}
+  <input type="text">
+  <label>First Name</label>
+  <input type="password">
+  <label>Password</label>
+  <input type="email">
+  <label>Email</label>
+<div class="group">
+  <input type="tel" disabled>
+  <label>Phone</label>
