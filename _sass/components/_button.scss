@@ -1,4 +1,4 @@
-button,
+#{$all-buttons},
 a.button {
   padding: 6px 16px;
   @extend %button;
@@ -41,19 +41,4 @@ a.button {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-}
-.waves-input-wrapper {
-  padding: none;
-  @extend %button;
-}
-
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-  padding: 6px 16px;
-  width: 100%;
-  height: 100%;
-  border: none!important;
-  background-color: rgba(0, 0, 0, 0);
-  @extend %button-text;
 }

@@ -1,32 +1,45 @@
 #{$all-text-inputs}{
   font-family: Roboto, sans-serif;
   padding-top: 37.7px;
+  padding-bottom: 6px;
   font-size:16px;
   display:block;
   width:300px;
   border:none;
   border-bottom: solid 1px #999;
-  transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+  @include transition(0.35s ease all);
   background: linear-gradient(to bottom, rgba(255,255,255,0) 98%, $color 2%);
   background-position: 50% 0;
   background-size: 0 100%;
   background-repeat: no-repeat;
   color: darken($color, 20%);
-  &.empty {
-    
+  &.visited:invalid:not(:focus) {
+    color:red;
+    border-color: red;
+    & + label {
+      color: red;
+    }
   }
   &:disabled {
     border-bottom: dashed 1px gray;
   }
+  &.empty:not(:focus) + label {
+    top:-21px;
+    font-size:16px;
+  }
   & + label {
+    margin-bottom: -10px;
     font-family: Roboto, sans-serif;
     color:#999;
-    font-size:16px;
     font-weight:normal;
     position:relative;
     pointer-events:none;
-    top: -21px;
-    @include transition(0.2s ease all);
+    @include transition(0.35s ease all);
+    top:-44px;
+    font-size:12px;
+  }
+  &:required + label::after {
+    content: "*";
   }
   &:focus {
     box-shadow: none;
@@ -34,18 +47,7 @@
     background-size: 100% 100%;
     border-bottom: solid 1px $color;
     & + label {
-      top:-38px;
-      font-size:12px;
       color: $color;
-    }
-  }
-  &:valid:not(:focus) {
-    box-shadow: none;
-    outline: none;
-    & + label {
-      top:-38px;
-      font-size:12px;
-      color:#999;
     }
   }
 }
