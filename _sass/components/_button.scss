@@ -19,7 +19,7 @@ a.button {
   vertical-align: middle;
   cursor: pointer;
   border: none;
-  outline: none;
+  outline: none!important;
   background-color: $color;
   border-radius: 0.2em;
   min-width: 88px;
@@ -29,7 +29,8 @@ a.button {
   &:focus,
   &:active {
     @include elevation(8);
-    outline: none;
+    outline: none!important;
+    border:none;
   }
 }
 %button-text {
