@@ -1,0 +1,57 @@
+.card {
+  display: block;
+  border-radius: 2px;
+  background-color: white;
+  @include elevation(2);
+  .square {
+    position: relative;
+    width: 20%;
+    height: 0;
+    padding-bottom: 20%;
+    overflow: hidden;
+  }
+  .square img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }
+  .square img.portrait {
+    width: 100%;
+    height: auto;
+  }
+  img {
+    @include border-top-radius(2px);
+  }
+}
+#container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+#dummy {
+    margin-top: 100%;
+}
+#element {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: silver;
+    overflow:hidden;
+}
+img {
+    position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}

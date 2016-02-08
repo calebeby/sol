@@ -8,12 +8,14 @@
   border:none;
   border-bottom: solid 1px #999;
   @include transition(0.35s ease all);
-  background: linear-gradient(to bottom, rgba(255,255,255,0) 98%, $color 2%);
+  background-color: rgba(255, 255, 255, 0);
+  @include background-image(linear-gradient(to top, $color, $color 2px, rgba(255, 255, 255, 0) 2px));
   background-position: 50% 0;
   background-size: 0 100%;
   background-repeat: no-repeat;
   color: darken($color, 20%);
   &.visited:invalid:not(:focus) {
+    background-color: rgba(255, 255, 255, 0);
     color:red;
     border-color: red;
     & + label {
