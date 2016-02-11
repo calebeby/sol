@@ -5,6 +5,8 @@ a.button {
   @extend %button-text;
 }
 %button {
+  margin-right:-4px;
+  line-height:25px;
   position: relative;
   cursor: pointer;
   display: inline-block;
@@ -15,7 +17,6 @@ a.button {
   user-select: none;
   -webkit-tap-highlight-color: transparent;
   height: 36px;
-  margin-top: 10px;
   vertical-align: middle;
   cursor: pointer;
   border: none;

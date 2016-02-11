@@ -3,55 +3,67 @@
   border-radius: 2px;
   background-color: white;
   @include elevation(2);
-  .square {
-    position: relative;
-    width: 20%;
-    height: 0;
-    padding-bottom: 20%;
-    overflow: hidden;
+  .media {
+    &.square::before {
+      content: "";
+      display: block;
+      padding-top: 100%; 	/* initial ratio of 1:1*/
+    }
+    &.wide::before {
+      content: "";
+      display: block;
+      padding-top: 56.25%; 	/* initial ratio of 1:1*/
+    }
+    &.square img {
+      height:100%;
+      width: auto;
+    }
+    &.wide img {
+      width:100%;
+      height: auto;
+    }
+    &.square, &.wide {
+      @include border-top-radius(2px);
+      overflow:hidden;
+      display: block;
+      position: relative;
+      width: 100%;
+      img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow:hidden;
+        left: 50%;
+        top: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+      }//end img
+    }//end square, wide
+  }//end media
+  .actions {
+    padding: 6px 4px;
+    #{$all-buttons},
+    a.button {
+      margin: 2px 0 2px 4px;
+    }
   }
-  .square img {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    height: 100%;
-    width: auto;
-    -webkit-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
+  .title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 44px;
   }
-  .square img.portrait {
-    width: 100%;
-    height: auto;
+  .text {
+    padding:16px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
   }
-  img {
-    @include border-top-radius(2px);
+  &>:last-child:not(:only-child) {
+    padding-bottom: 24px;
   }
-}
-#container {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-}
-#dummy {
-    margin-top: 100%;
-}
-#element {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: silver;
-    overflow:hidden;
-}
-img {
-    position: absolute;
-  left: 50%;
-  top: 50%;
-  height: 100%;
-  width: auto;
-  -webkit-transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
-          transform: translate(-50%,-50%);
-}
+}//end card
