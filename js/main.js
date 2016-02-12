@@ -1,4 +1,5 @@
-Waves.attach('.button', 'waves-light');
+Waves.attach('.button:not(.flat)', 'waves-light');
+Waves.attach('.button.flat', 'waves-dark');
 Waves.attach('button', 'waves-light');
 Waves.init();
 $(function(){

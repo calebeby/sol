@@ -3,6 +3,14 @@ a.button {
   padding: 6px 16px;
   @extend %button;
   @extend %button-text;
+  background-color: $color;
+  @extend %button-shadow;
+}
+a.button.flat{
+  background-color: inherit;
+  color: rgba(0,0,0,0.87);
+  z-index: 2;
+  padding: 6px 8px;
 }
 %button {
   margin-right:-4px;
@@ -21,21 +29,28 @@ a.button {
   cursor: pointer;
   border: none;
   outline: none!important;
-  background-color: $color;
   border-radius: 0.2em;
   min-width: 88px;
-  @include transition(all 250ms);
-  @include elevation(2);
+  @include transition(all 350ms);
+}
+%button-shadow {
+  &:not(.flat) {
+    @include elevation(2);
+  }
   &:hover,
-  &:focus,
   &:active {
-    @include elevation(8);
+    &:not(.flat) {
+      @include elevation(8);
+    }
     outline: none!important;
     border:none;
   }
+  &:focus:not(.flat) {
+    @include elevation(5);
+  }
 }
 %button-text {
-  font-size: 14pt;
+  font-size: 14px;
   color: white;
   white-space: nowrap;
   font-family: 'Roboto', sans-serif;

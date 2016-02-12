@@ -8,7 +8,7 @@ main {
   @include outer-container(80%);
 }
 
-.row1 {
+.row {
   @include span-columns(12);
   .card {
     @include media($phone) {
@@ -20,8 +20,8 @@ main {
       @include omega(2n);
     }
     @include media($desktop) {
-      @include span-columns(3);
-      @include omega(4n);
+      @include span-columns(4);
+      @include omega(3n);
     }
   }
 }
