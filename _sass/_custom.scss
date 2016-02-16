@@ -4,6 +4,11 @@ $desktop:new-breakpoint(min-width 840px, $total-columns: 12);
 body {
   margin: 0;
 }
+@import "components/waves";
+.card { @extend %card; }
+#{$all-buttons}, a.button { @extend %buttons; }
+#{$all-text-inputs} { @extend %text-inputs; }
+.highlighter-rouge { @extend %highlight; }
 main {
   @include outer-container(80%);
 }

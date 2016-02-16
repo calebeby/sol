@@ -1,18 +1,5 @@
-#{$all-buttons},
-a.button {
+%buttons {
   padding: 6px 16px;
-  @extend %button;
-  @extend %button-text;
-  background-color: $color;
-  @extend %button-shadow;
-}
-a.button.flat{
-  background-color: inherit;
-  color: rgba(0,0,0,0.87);
-  z-index: 2;
-  padding: 6px 8px;
-}
-%button {
   margin-right:-4px;
   line-height:25px;
   position: relative;
@@ -32,6 +19,15 @@ a.button.flat{
   border-radius: 0.2em;
   min-width: 88px;
   @include transition(all 350ms);
+  @extend %button-text;
+  background-color: $color;
+  @extend %button-shadow;
+  &.flat {
+    background-color: inherit;
+    color: rgba(0,0,0,0.87);
+    z-index: 2;
+    padding: 6px 8px;
+  }
 }
 %button-shadow {
   &:not(.flat) {
