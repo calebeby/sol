@@ -9,7 +9,7 @@ body {
 #{$all-buttons}, a.button { @extend %buttons; }
 #{$all-text-inputs} { @extend %text-inputs; }
 .highlighter-rouge { @extend %highlight; }
-.mdi { @extend %icons; }
+.icon { @extend %icons; }
 main {
   @include outer-container(80%);
 }
