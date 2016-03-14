@@ -5,6 +5,10 @@ html {
   padding: 0;
 }
 footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background-color: red;
   padding: 10px;
 }
