@@ -7,6 +7,6 @@ main {
   flex: 1;
 }
 footer {
-  background-color: red;
+  @extend %red;
   padding: 10px;
 }
