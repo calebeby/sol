@@ -7,6 +7,9 @@ main {
   flex: 1;
 }
 footer {
-  @extend %red;
+  @extend $footer-color;
   padding: 10px;
+  .copyright {
+    @extend %#{$footer-color}%darken-3;
+  }
 }
