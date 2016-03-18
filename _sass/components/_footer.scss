@@ -7,5 +7,7 @@ main {
   flex: 1;
 }
 %footer {
-  padding: 10px;
+  .footer-top, .footer-bottom {
+    padding: 10px;
+  }
 }
