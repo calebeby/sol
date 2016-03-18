@@ -6,10 +6,6 @@ html, body {
 main {
   flex: 1;
 }
-footer {
-  @extend $footer-color;
+%footer {
   padding: 10px;
-  .copyright {
-    @extend %#{$footer-color}%darken-3;
-  }
 }

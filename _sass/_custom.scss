@@ -33,6 +33,9 @@ textarea {
 .highlighter-rouge {
   @extend %highlight;
 }
+footer {
+  @extend %footer, %purple, %lighten-5;
+}
 @if $load-icons {
   .icon {
     @extend %icons;
