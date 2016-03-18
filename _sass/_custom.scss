@@ -38,7 +38,7 @@ footer {
   .footer-top {
     @extend %purple, %lighten-1;
   }
-  .copyright {
+  .footer-bottom {
     @extend %purple, %accent-2;
   }
 }
