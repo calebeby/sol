@@ -34,7 +34,10 @@ textarea {
   @extend %highlight;
 }
 footer {
-  @extend %footer, %purple, %lighten-5;
+  @extend %footer, %purple, %lighten-1;
+  .copyright {
+    @extend %purple, %accent-2;
+  }
 }
 @if $load-icons {
   .icon {
