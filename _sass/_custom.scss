@@ -10,7 +10,7 @@ body {
 }
 #{$all-buttons},
 a.button {
-  @extend %buttons;
+  @extend %buttons, %green, %lighten-2;
 }
 
 input[type="search"] { @extend %search; }
