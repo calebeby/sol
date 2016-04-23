@@ -4,7 +4,6 @@ $desktop: new-breakpoint(min-width 840px, $total-columns: 12);
 body {
   margin: 0;
 }
-@import "components/waves";
 .card {
   @extend %card;
 }

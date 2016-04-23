@@ -1,0 +1,3 @@
+[submodule "_sass/sol"]
+	path = _sass/sol
+	url = http://github.com/calebeby/sol
