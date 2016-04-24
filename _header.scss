@@ -1,0 +1,23 @@
+%header {
+  height: 56px;
+  top: 0;
+  text-align: justify;
+  @include elevation(4);
+  & * {
+    @include transition(all 350ms);
+  }
+  nav, ul, li {
+    vertical-align: middle;
+    height: 100%;
+    padding: 0;
+    float: left;
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+    display: inline-block;
+    line-height: 56px;
+    padding: 0 15px;
+    height: 100%;
+  }
+}
