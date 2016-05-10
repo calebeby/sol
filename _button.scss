@@ -1,4 +1,4 @@
-%buttons {
+%button {
   padding: 6px 16px;
   margin-right:-4px;
   line-height:25px;
@@ -6,10 +6,7 @@
   cursor: pointer;
   display: inline-block;
   overflow: hidden;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  @include user-select(none);
   -webkit-tap-highlight-color: transparent;
   height: 36px;
   vertical-align: middle;
@@ -21,7 +18,7 @@
   @include transition(all 350ms);
   @extend %button-text;
   @extend %button-shadow;
-  &.flat {
+  &%flat {
     background-color: inherit;
     color: rgba(0,0,0,0.87);
     z-index: 2;
@@ -29,18 +26,18 @@
   }
 }
 %button-shadow {
-  &:not(.flat) {
+  &:not(%flat) {
     @include elevation(2);
   }
   &:hover,
   &:active {
-    &:not(.flat) {
+    &:not(%flat) {
       @include elevation(8);
     }
     outline: none!important;
     border:none;
   }
-  &:focus:not(.flat) {
+  &:focus:not(%flat) {
     @include elevation(5);
   }
 }

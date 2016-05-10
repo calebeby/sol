@@ -3,26 +3,26 @@
   border-radius: 2px;
   background-color: white;
   @include elevation(2);
-  .media {
-    &.square::before {
+  %media {
+    &%square::before {
       content: "";
       display: block;
       padding-top: 100%;//this is the ratio
     }
-    &.wide::before {
+    &%wide::before {
       content: "";
       display: block;
       padding-top: 56.25%;//this is the ratio
     }
-    &.square img {
+    &%square img {
       height:100%;
       width: auto;
     }
-    &.wide img {
+    &%wide img {
       width:100%;
       height: auto;
     }
-    &.square, &.wide {
+    &%square, &%wide {
       @include border-top-radius(2px);
       overflow:hidden;
       display: block;
@@ -45,55 +45,43 @@
       }//end img
     }//end square, wide
   }//end media
-  .actions {
-    padding: 6px 8px 6px 6px;
-    #{$all-buttons},
-    a.button {
-      margin: 2px 0 2px 4px;
+  %action {
+    margin: 8px 0 8px 8px;
+  }
+  %title {
+    @extend %text-headline;
+    padding: 24px 16px 16px;
+    &:last-child {
+      padding: 24px 16px
     }
   }
-  .title {
-    &.avatar {
-      height: 72px;
-      padding: 16px;
-      img {
-        height:40px;
-        width: 40px;
-        border-radius: 50%;
-        float: left;
-        margin-right:5px;
-      }
-      h1, h2 {
-        font-size: 14px;
-        line-height: 21px;
-        font-weight: 400;
-      }
-      h1 {
-        color: rgba(0,0,0,0.87);
-      }
-      h2 {
-        color: rgba(0,0,0,0.54);
-      }
+  %avatar-title {
+    height: 72px;
+    padding: 16px;
+    img {
+      height:40px;
+      width: 40px;
+      border-radius: 50%;
+      float: left;
+      margin-right:5px;
     }
-    &:not(.avatar) {
-      padding: 24px 16px;
-      h1 {
-        @extend %text-headline;
-      }
-      h2 {
-        font-size: 14px;
-        color: rgba(0,0,0,0.54);
-      }
+    h1, h2 {
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 400;
+    }
+    h1 {
+      color: rgba(0,0,0,0.87);
+    }
+    h2 {
+      color: rgba(0,0,0,0.54);
     }
   }
-  .text {
+  %text {
     padding:16px;
     font-size: 14px;
     font-weight: 400;
     line-height: 25px;
     color: rgba(0,0,0,0.87);
-  }
-  &>:last-child:not(:only-child):not(.actions) {
-    padding-bottom: 24px;
   }
 }//end card
