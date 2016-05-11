@@ -52,7 +52,11 @@
     @extend %text-headline;
     padding: 24px 16px 16px;
     &:last-child {
-      padding: 24px 16px
+      padding: 24px 16px;
+    }
+    %subtitle {
+      padding-top: 12px;
+      @extend %text-subhead;
     }
   }
   %avatar-title {
