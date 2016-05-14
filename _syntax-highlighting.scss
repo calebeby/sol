@@ -1,13 +1,12 @@
 p code {
   padding: 5px 5px;
-  font-size: 85%;
+  font-size: 90%;
   background-color: rgba(0,0,0,0.04);
   border-radius: 3px;
 }
 
 %highlight {
   padding: 5px 5px;
-  font-size: 85%;
   background-color: rgba(0,0,0,0.04);
   border-radius: 3px;
   margin: 5px 5px;
@@ -17,9 +16,9 @@ p code {
   .c { color: #aaaaaa; font-style: italic } // Comment
   .err { color: #F00000; background-color: #F0A0A0 } // Error
   .k { color: #0000aa } // Keyword
-  .cm { color: #aaaaaa; font-style: italic } // Comment.Multiline
+  .cm { color: $grey; font-style: italic } // Comment.Multiline
   .cp { color: #4c8317 } // Comment.Preproc
-  .c1 { color: #aaaaaa; font-style: italic } // Comment.Single
+  .c1 { color: $grey; font-style: italic } // Comment.Single
   .cs { color: #0000aa; font-style: italic } // Comment.Special
   .gd { color: #aa0000 } // Generic.Deleted
   .ge { font-style: italic } // Generic.Emph
@@ -33,7 +32,7 @@ p code {
   .gt { color: #aa0000 } // Generic.Traceback
   .kc { color: #0000aa } // Keyword.Constant
   .kd { color: #0000aa } // Keyword.Declaration
-  .kn { color: #0000aa } // Keyword.Namespace
+  .kn { color: $blue } // Keyword.Namespace
   .kp { color: #0000aa } // Keyword.Pseudo
   .kr { color: #0000aa } // Keyword.Reserved
   .kt { color: #00aaaa } // Keyword.Type
@@ -41,12 +40,12 @@ p code {
   .s { color: #aa5500 } // Literal.String
   .na { color: #1e90ff } // Name.Attribute
   .nb { color: #00aaaa } // Name.Builtin
-  .nc { color: #00aa00; text-decoration: underline } // Name.Class
+  .nc { color: $green; text-decoration: underline } // Name.Class
   .no { color: #aa0000 } // Name.Constant
   .nd { color: #888888 } // Name.Decorator
   .ni { color: #800000; font-weight: bold } // Name.Entity
   .nf { color: #00aa00 } // Name.Function
-  .nn { color: #00aaaa; text-decoration: underline } // Name.Namespace
+  .nn { color: $teal; text-decoration: underline } // Name.Namespace
   .nt { color: #1e90ff; font-weight: bold } // Name.Tag
   .nv { color: #aa0000 } // Name.Variable
   .ow { color: #0000aa } // Operator.Word
