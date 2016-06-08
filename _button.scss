@@ -36,6 +36,7 @@
     }
     outline: none!important;
     border:none;
+    background-color: $grey-200;
   }
   &:focus:not(%flat) {
     @include elevation(5);
@@ -43,7 +44,6 @@
 }
 %button-text {
   font-size: 14px;
-  color: white;
   white-space: nowrap;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;

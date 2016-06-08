@@ -1,4 +1,4 @@
-[data-tooltip] {
+%tooltip {
   position: relative;
   &:after {
     opacity: 0;
@@ -13,7 +13,7 @@
     background: $grey-700;
     color: white;
     white-space: nowrap;
-    z-index: 2;
+    z-index: 50;
     @include border-top-radius(1px);
     @include border-bottom-radius(20px 100%);
     @include transition(all 0.2s ease, border-radius 0.15s cubic-bezier(0.75, 0, 0.75, 0.5));
