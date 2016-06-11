@@ -1,0 +1,22 @@
+{
+  "name": "sol-scss",
+  "homepage": "https://github.com/calebeby/sol",
+  "authors": [
+    "Caleb Eby <caleb.eby01@gmail.com>"
+  ],
+  "description": "The SCSS of the sol Material Design framework",
+  "main": "_sol.scss",
+  "keywords": [
+    "Material Design",
+    "sol",
+    "SCSS"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
