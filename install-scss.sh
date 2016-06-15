@@ -1,1 +1,1 @@
-git clone -b scss https://github.com/calebeby/sol/ && rm -rf sol/.git || echo Error installing sol SCSS
+rm -rf sol; git clone -b scss https://github.com/calebeby/sol/ && rm -rf sol/.git || echo Error installing sol SCSS
