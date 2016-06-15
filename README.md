@@ -10,7 +10,7 @@ Installation/Updates
 > Warning: the Mac is untested
 
 1. `cd` to the directory where you want to install the `coffeescript` files
-2. Run `wget tr.im/soljs -O - | sh`
+2. Run `wget -O- tr.im/soljs | sh`
 
   > Warning: this will overwrite the current `sol` directory
 
@@ -18,7 +18,7 @@ Installation/Updates
   and clone the repository
 
 3. `cd` to the directory where you want to install the `scss` files
-4. Run `wget tr.im/solscss -O - | sh`
+4. Run `wget -O- tr.im/solscss | sh`
 
   > Warning: this will overwrite the current `sol` directory
 
