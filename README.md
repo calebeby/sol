@@ -21,6 +21,6 @@ Installation
   and clone the repository
 
 ### Windows/Manual
-[Download SCSS zip](https://github.com/calebeby/sol/archive/SCSS.zip)
+[Download SCSS zip](https://github.com/calebeby/sol/archive/scss.zip)
 
 [Download Coffeescript zip](https://github.com/calebeby/sol/archive/coffeescript.zip)
