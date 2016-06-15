@@ -9,12 +9,12 @@ Installation
 ### Linux/Mac
 > Warning: the Mac is untested
 
-1. `cd` to the directory where you want to install the coffeescript files
+1. `cd` to the directory where you want to install the `coffeescript` files
 2. Run `wget tiny.cc/soljs -O - | sh`
 
   This will download and excecute the [installation file](https://raw.githubusercontent.com/calebeby/sol/master/install.sh),
   and clone the repository
-3. `cd` to the directory where you want to install the scss files
+3. `cd` to the directory where you want to install the `scss` files
 4. Run `wget tiny.cc/solscss -O - | sh`
 
   This will download and excecute the [installation file](https://raw.githubusercontent.com/calebeby/sol/master/install.sh),
