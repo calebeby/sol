@@ -18,7 +18,7 @@ Installation/Updates
   and clone the repository
 
 3. `cd` to the directory where you want to install the `scss` files
-4. Run `wget -O- tr.im/solscss | sh`
+4. Run `wget -O- tr.im/scss | sh`
 
   > Warning: this will overwrite the current `sol` directory
 
