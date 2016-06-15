@@ -16,6 +16,7 @@ Installation/Updates
 
   This will download and excecute the [installation file](https://raw.githubusercontent.com/calebeby/sol/master/install-js.sh),
   and clone the repository
+
 3. `cd` to the directory where you want to install the `scss` files
 4. Run `wget tiny.cc/solscss -O - | sh`
 
