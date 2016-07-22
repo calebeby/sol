@@ -15,7 +15,7 @@
   outline: none!important;
   border-radius: 0.2em;
   min-width: 88px;
-  @include transition(all 350ms);
+  transition: all 350ms ease;
   @extend %button-text;
   @extend %button-shadow;
   &%flat {
