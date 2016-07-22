@@ -6,7 +6,7 @@
   cursor: pointer;
   display: inline-block;
   overflow: hidden;
-  @include user-select(none);
+  user-select: none;
   -webkit-tap-highlight-color: transparent;
   height: 36px;
   vertical-align: middle;
