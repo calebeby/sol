@@ -23,7 +23,8 @@
       height: auto;
     }
     &%square, &%wide {
-      @include border-top-radius(2px);
+      border-top-right-radius: 2px;
+      border-top-left-radius: 2px;
       overflow:hidden;
       display: block;
       position: relative;

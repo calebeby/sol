@@ -3,7 +3,7 @@
   text-align: justify;
   @include elevation(4);
   & * {
-    @include transition(all 350ms);
+    transition: all 350ms;
   }
   nav, ul, li {
     vertical-align: middle;

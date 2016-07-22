@@ -14,9 +14,11 @@
     color: white;
     white-space: nowrap;
     z-index: 50;
-    @include border-top-radius(1px);
-    @include border-bottom-radius(20px 100%);
-    @include transition(all 0.2s ease, border-radius 0.15s cubic-bezier(0.75, 0, 0.75, 0.5));
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+    border-bottom-left-radius: 20px 100%;
+    border-bottom-right-radius: 20px 100%;
+    transition: all 0.2s ease, border-radius 0.15s cubic-bezier(0.75, 0, 0.75, 0.5);
   }
   &:hover, &:focus {
     &:after {

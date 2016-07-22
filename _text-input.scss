@@ -33,9 +33,9 @@
   display:block;
   border:none;
   border-bottom: solid 1px #999;
-  @include transition(0.35s ease all);
+  transition: 0.35s ease all;
   background-color: rgba(255, 255, 255, 0);
-  @include background-image(linear-gradient(to top, $color, $color 2px, rgba(255, 255, 255, 0) 2px));
+  background-image: linear-gradient(to top, $color, $color 2px, rgba(255, 255, 255, 0) 2px);
   background-position: 50% 0;
   background-size: 0 100%;
   background-repeat: no-repeat;
@@ -62,7 +62,7 @@
     font-weight:normal;
     position:relative;
     pointer-events:none;
-    @include transition(0.35s ease all);
+    transition: 0.35s ease all;
     top:-44px;
     font-size:12px;
   }
