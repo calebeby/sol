@@ -22,7 +22,7 @@
   background-repeat: no-repeat;
   background-origin: padding-box;
   background-position: 10px 50%;
-  @include transition(0.35s ease all);
+  transition: 0.35s ease all;
 }
 // TODO: input[type="search"]::-webkit-search-cancel-button and ::-ms-clear
 %text-inputs {
