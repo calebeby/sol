@@ -1,6 +1,8 @@
 Sol - a Lightweight Material Design Framework for the Web
 =========================================================
 
+# Warning: Depricated!!! I recommend [Surface](http://mildrenben.github.io/surface/)
+
 Created and maintained by @calebeby
 
 Installation/Updates
